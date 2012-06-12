@@ -1,20 +1,18 @@
-<groups xmlns="http://www.isdc.ro/wro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+<groups xmlns="http://www.isdc.ro/wro">
 	
-  <group name="bootstrap">
-    <css>/less/bootstrap.less</css>
-    <js>/js/bootstrap-transition.js</js>
-    <js>/js/bootstrap-alert.js</js>
-    <js>/js/bootstrap-modal.js</js>
-    <js>/js/bootstrap-dropdown.js</js>
-    <js>/js/bootstrap-scrollspy.js</js>
-    <js>/js/bootstrap-tab.js</js>
-    <js>/js/bootstrap-tooltip.js</js>
-    <js>/js/bootstrap-popover.js</js>
-    <js>/js/bootstrap-button.js</js>
-    <js>/js/bootstrap-collapse.js</js>
-    <js>/js/bootstrap-carousel.js</js>
-    <js>/js/bootstrap-typeahead.js</js>
+  <group name="template1">
+    <css>/templates/template1/css/template.less</css>
+    <js>/templates/common/js/**.js</js>
+  </group> 
+	
+  <group name="template2">
+    <css>/templates/template2/css/template.less</css>
+    <js>/templates/common/js/**.js</js>
+  </group> 
+	
+  <group name="template3">
+    <css>/templates/template3/css/template.less</css>
+    <js>/templates/common/js/**.js</js>
   </group> 
   	
 </groups>

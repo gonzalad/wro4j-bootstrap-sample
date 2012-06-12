@@ -10,22 +10,51 @@
 			<plugin>
 				<groupId>ro.isdc.wro4j</groupId>
 				<artifactId>wro4j-maven-plugin</artifactId>
-				<version>1.4.5</version>
+				<version>1.4.6</version>
 				<executions>
 					<execution>
+						<id>template1</id>
 						<phase>compile</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>
+						<configuration>
+							<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+							<targetGroups>template1</targetGroups>
+							<destinationFolder>${project.build.directory}/${project.build.finalName}/templates/template1/</destinationFolder>
+							<cssDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template1/css/</cssDestinationFolder>
+							<jsDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template1/js/</jsDestinationFolder>
+						</configuration>
+					</execution>
+					<execution>
+						<id>template2</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+							<targetGroups>template2</targetGroups>
+							<destinationFolder>${project.build.directory}/${project.build.finalName}/templates/template2/</destinationFolder>
+							<cssDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template2/css/</cssDestinationFolder>
+							<jsDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template2/js/</jsDestinationFolder>
+						</configuration>
+					</execution>
+					<execution>
+						<id>template3</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+							<targetGroups>template3</targetGroups>
+							<destinationFolder>${project.build.directory}/${project.build.finalName}/templates/template3/</destinationFolder>
+							<cssDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template3/css/</cssDestinationFolder>
+							<jsDestinationFolder>${project.build.directory}/${project.build.finalName}/templates/template3/js/</jsDestinationFolder>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<targetGroups>bootstrap</targetGroups>
-					<destinationFolder>${project.build.directory}/${project.build.finalName}</destinationFolder>
-					<cssDestinationFolder>${project.build.directory}/${project.build.finalName}/css/</cssDestinationFolder>
-					<jsDestinationFolder>${project.build.directory}/${project.build.finalName}/js/</jsDestinationFolder>
-					<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
